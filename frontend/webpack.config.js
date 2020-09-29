@@ -8,7 +8,7 @@ module.exports = {
         filename: './app.js'
     },
     devServer: {
-        port: 9001,
+        port: 3000,
         contentBase: './public'
     },
     resolve: {
@@ -27,7 +27,7 @@ module.exports = {
             exclude: /node_modules/,
             query: {
                 presets: ['es2015', 'react'],
-                plugins: [`transform-object-rest-spread`]
+                plugins: ['transform-object-rest-spread']
             }
         }, {
             test: /\.css$/,
